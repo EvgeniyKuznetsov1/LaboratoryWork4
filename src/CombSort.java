@@ -22,10 +22,10 @@ public class CombSort {
         int step = array.length - 1;
         boolean isSorted = false;
         while(step >= 1 || !isSorted){
-            isSorted = true;
             /* Массив будет отсортирован тогда, когда !isSorted,
             т.е. условие в цикле, определяющее, будет ли совершаться замена текущего элемента
             с элементом на интервале(step), не будет выполнено ни разу за итерацию */
+            isSorted = true;
             for(int i = 0; i + step < array.length; i++){
                 if(array[i] > array[i + step]){
                     int temp = array[i];
